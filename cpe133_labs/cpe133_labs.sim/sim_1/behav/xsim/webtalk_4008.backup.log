@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Aug 18 12:03:00 2021
+# Process ID: 4008
+# Current directory: C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.sim/sim_1/behav/xsim/xsim.dir/leds_decoder_sim_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/Christian -notrace
+couldn't read file "C:/Users/Christian": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Wed Aug 18 12:03:00 2021...

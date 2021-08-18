@@ -1,80 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1629263102">
-  <File Type="BITSTR-BMM" Name="final_project_bd.bmm"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="final_project_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="final_project_timing_summary_init.rpt"/>
   <File Type="ROUTE-PWR" Name="final_project_power_routed.rpt"/>
   <File Type="PA-TCL" Name="final_project.tcl"/>
-  <File Type="OPT-TIMING" Name="final_project_timing_summary_opted.rpt"/>
-  <File Type="OPT-DCP" Name="final_project_opt.dcp"/>
   <File Type="ROUTE-PWR-SUM" Name="final_project_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="final_project_reports.tcl"/>
+  <File Type="BITSTR-MSK" Name="final_project.msk"/>
+  <File Type="ROUTE-CLK" Name="final_project_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="final_project.vdi"/>
+  <File Type="BG-BIT" Name="final_project.bit"/>
+  <File Type="BG-DRC" Name="final_project.drc"/>
+  <File Type="BG-BGN" Name="final_project.bgn"/>
+  <File Type="BG-BIN" Name="final_project.bin"/>
+  <File Type="BITSTR-RBT" Name="final_project.rbt"/>
+  <File Type="BITSTR-NKY" Name="final_project.nky"/>
+  <File Type="BITSTR-BMM" Name="final_project_bd.bmm"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="final_project_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MMI" Name="final_project.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="final_project.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="final_project.ltx"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="OPT-DRC" Name="final_project_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="final_project.hwdef"/>
-  <File Type="PWROPT-DCP" Name="final_project_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="final_project_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="final_project_timing_summary_pwropted.rpt"/>
-  <File Type="PLACE-DCP" Name="final_project_placed.dcp"/>
   <File Type="PLACE-IO" Name="final_project_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="final_project_clock_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL" Name="final_project_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL-PB" Name="final_project_utilization_placed.pb"/>
   <File Type="PLACE-CTRL" Name="final_project_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="final_project_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="final_project_incremental_reuse_pre_placed.rpt"/>
-  <File Type="PLACE-TIMING" Name="final_project_timing_summary_placed.rpt"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="final_project_postplace_pwropt.dcp"/>
-  <File Type="BG-BIN" Name="final_project.bin"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="final_project_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="final_project_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="final_project_drc_physopted.rpt"/>
-  <File Type="BITSTR-MSK" Name="final_project.msk"/>
-  <File Type="PHYSOPT-TIMING" Name="final_project_timing_summary_physopted.rpt"/>
-  <File Type="ROUTE-ERROR-DCP" Name="final_project_routed_error.dcp"/>
-  <File Type="ROUTE-DCP" Name="final_project_routed.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="final_project_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="final_project_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="final_project_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="final_project_drc_routed.rpx"/>
-  <File Type="BITSTR-MMI" Name="final_project.mmi"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="final_project_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="final_project_methodology_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="final_project_methodology_drc_routed.pb"/>
   <File Type="ROUTE-PWR-RPX" Name="final_project_power_routed.rpx"/>
   <File Type="ROUTE-STATUS" Name="final_project_route_status.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="final_project_route_status.pb"/>
+  <File Type="ROUTE-DCP" Name="final_project_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="final_project_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="final_project_routed_bb.dcp"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="final_project_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="final_project_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="final_project_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="final_project_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="final_project_clock_utilization_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW" Name="final_project_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="final_project_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="final_project_bus_skew_routed.rpx"/>
+  <File Type="OPT-DCP" Name="final_project_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="final_project_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="final_project_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="final_project_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="final_project_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="final_project_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="final_project_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="final_project_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="final_project_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="final_project_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="final_project_bus_skew_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="final_project_bus_skew_postroute_physopted.pb"/>
-  <File Type="BG-BIT" Name="final_project.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="final_project_bus_skew_postroute_physopted.rpx"/>
-  <File Type="BITSTR-RBT" Name="final_project.rbt"/>
-  <File Type="BITSTR-NKY" Name="final_project.nky"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="final_project_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="final_project_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="final_project_methodology_drc_routed.rpx"/>
   <File Type="PDI-FILE" Name="final_project.pdi"/>
   <File Type="RCFI_FILE" Name="final_project.rcfi"/>
   <File Type="CFI_FILE" Name="final_project.cfi"/>
   <File Type="RNPI_FILE" Name="final_project.rnpi"/>
   <File Type="NPI_FILE" Name="final_project.npi"/>
   <File Type="RBD_FILE" Name="final_project.rbd"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="final_project.ltx"/>
-  <File Type="BITSTR-SYSDEF" Name="final_project.sysdef"/>
-  <File Type="BG-BGN" Name="final_project.bgn"/>
-  <File Type="BG-DRC" Name="final_project.drc"/>
-  <File Type="RDI-RDI" Name="final_project.vdi"/>
-  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/FA.sv">
@@ -269,5 +251,6 @@
     <Step Id="route_design"/>
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
   </Strategy>
 </GenRun>

@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../cpe133_labs.srcs/sources_1/new/bc_dec.vhd" \
+"../../../../cpe133_labs.srcs/sources_1/new/clock_div2.vhd" \
+"../../../../cpe133_labs.srcs/sources_1/new/seq_driver.vhd" \
+
+# Do not sort compile order
+nosort
