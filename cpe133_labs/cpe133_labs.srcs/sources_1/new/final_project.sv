@@ -31,6 +31,6 @@ module final_project(
     output [15:0] LEDS
     );
     
-    univ_sseg s_seg( .clk(clk), .cnt1({7'b0000011}), .cnt2(7'b1100011), .dp_en(1'b0), .dp_sel(2'b0), .mod_sel(2'b01), .sign(1'b0), .valid('b1), .ssegs(seg), .disp_en(an) );
+    univ_sseg s_seg( .clk(clk), .cnt1({7'b0000011}), .cnt2(7'b1100010), .dp_en(1'b0), .dp_sel(2'b0), .mod_sel(2'b01), .sign(1'b0), .valid('b1), .ssegs(seg), .disp_en(an) );
 
 endmodule

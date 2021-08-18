@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.runs/synth_1/final_project.tcl"
+  variable script "C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.runs/synth_1/final_project.tcl"
   variable category "vivado_synth"
 }
 
@@ -78,38 +78,40 @@ create_project -in_memory -part xc7a35tcpg236-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir {C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.cache/wt} [current_project]
-set_property parent.project_path {C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.xpr} [current_project]
+set_property webtalk.parent_dir {C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.cache/wt} [current_project]
+set_property parent.project_path {C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.xpr} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo {c:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.cache/ip} [current_project]
+set_property ip_output_repo {c:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib -sv {
-  {C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.srcs/sources_1/new/FA.sv}
-  {C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.srcs/sources_1/new/FSM_011101_011001.sv}
-  {C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.srcs/sources_1/new/HA.sv}
-  {C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.srcs/sources_1/new/Lab0.sv}
-  {C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.srcs/sources_1/new/Lab1.sv}
-  {C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.srcs/sources_1/new/Lab2.sv}
-  {C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.srcs/sources_1/new/Lab3.sv}
-  {C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.srcs/sources_1/new/MUX_2_1.sv}
-  {C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.srcs/sources_1/new/RCA_4_FA.sv}
-  {C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.srcs/sources_1/new/RC_Add_Sub.sv}
-  {C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.srcs/sources_1/new/RC_Add_Sub_Univ_SSeg.sv}
-  {C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.srcs/sources_1/new/SevenSeg.sv}
-  {C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.srcs/sources_1/new/Validity.sv}
-  {C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.srcs/sources_1/new/fsm_template.sv}
-  {C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.srcs/sources_1/new/n_bit_register.sv}
-  {C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.srcs/sources_1/new/univ_sseg.sv}
-  {C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.srcs/sources_1/new/Lab7.sv}
-  {C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.srcs/sources_1/new/final_project.sv}
+  {C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/FA.sv}
+  {C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/FSM_011101_011001.sv}
+  {C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/HA.sv}
+  {C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/Lab0.sv}
+  {C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/Lab1.sv}
+  {C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/Lab2.sv}
+  {C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/Lab3.sv}
+  {C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/MUX_2_1.sv}
+  {C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/RCA_4_FA.sv}
+  {C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/RC_Add_Sub.sv}
+  {C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/RC_Add_Sub_Univ_SSeg.sv}
+  {C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/SevenSeg.sv}
+  {C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/Validity.sv}
+  {C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/fsm_template.sv}
+  {C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/n_bit_register.sv}
+  {C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/univ_sseg.sv}
+  {C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/Lab7.sv}
+  {C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/final_project.sv}
+  {C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/switches_encoder.sv}
+  {C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/LEDS_DECODER.sv}
 }
 read_vhdl -library xil_defaultlib {
-  {C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.srcs/sources_1/new/bc_dec.vhd}
-  {C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.srcs/sources_1/new/clock_div2.vhd}
-  {C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.srcs/sources_1/new/seq_driver.vhd}
+  {C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/bc_dec.vhd}
+  {C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/clock_div2.vhd}
+  {C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/seq_driver.vhd}
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -120,8 +122,8 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc {{C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.srcs/constrs_1/new/Basys3Constraints.xdc}}
-set_property used_in_implementation false [get_files {{C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.srcs/constrs_1/new/Basys3Constraints.xdc}}]
+read_xdc {{C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/constrs_1/new/Basys3Constraints.xdc}}
+set_property used_in_implementation false [get_files {{C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/constrs_1/new/Basys3Constraints.xdc}}]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

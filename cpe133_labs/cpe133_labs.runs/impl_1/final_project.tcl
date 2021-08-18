@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.runs/impl_1/final_project.tcl"
+  variable script "C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.runs/impl_1/final_project.tcl"
   variable category "vivado_impl"
 }
 
@@ -125,7 +125,7 @@ set rc [catch {
   set_param chipscope.maxJobs 1
   set_param xicom.use_bs_reader 1
   open_checkpoint final_project_routed.dcp
-  set_property webtalk.parent_dir {C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.cache/wt} [current_project]
+  set_property webtalk.parent_dir {C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.cache/wt} [current_project]
 set_property TOP final_project [current_fileset]
 OPTRACE "read constraints: write_bitstream" START { }
 OPTRACE "read constraints: write_bitstream" END { }
