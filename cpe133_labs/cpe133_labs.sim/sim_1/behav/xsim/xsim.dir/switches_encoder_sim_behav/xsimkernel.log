@@ -1,0 +1,7 @@
+Running: xsim.dir/switches_encoder_sim_behav/xsimk.exe -simmode gui -wdb switches_encoder_sim_behav.wdb -simrunnum 0 -socket 60718
+Design successfully loaded
+Design Loading Memory Usage: 5784 KB (Peak: 5784 KB)
+Design Loading CPU Usage: 61 ms
+Simulation completed
+Simulation Memory Usage: 6412 KB (Peak: 6412 KB)
+Simulation CPU Usage: 61 ms

@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../cpe133_labs.srcs/sources_1/new/Lab1.sv" \
+"../../../../cpe133_labs.srcs/sim_1/new/Lab1Sim.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

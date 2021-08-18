@@ -1,0 +1,31 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../cpe133_labs.srcs/sources_1/new/FA.sv" \
+"../../../../cpe133_labs.srcs/sources_1/new/FSM_011101_011001.sv" \
+"../../../../cpe133_labs.srcs/sources_1/new/HA.sv" \
+"../../../../cpe133_labs.srcs/sources_1/new/Lab0.sv" \
+"../../../../cpe133_labs.srcs/sources_1/new/Lab1.sv" \
+"../../../../cpe133_labs.srcs/sources_1/new/Lab2.sv" \
+"../../../../cpe133_labs.srcs/sources_1/new/Lab3.sv" \
+"../../../../cpe133_labs.srcs/sources_1/new/MUX_2_1.sv" \
+"../../../../cpe133_labs.srcs/sources_1/new/RCA_4_FA.sv" \
+"../../../../cpe133_labs.srcs/sources_1/new/RC_Add_Sub.sv" \
+"../../../../cpe133_labs.srcs/sources_1/new/RC_Add_Sub_Univ_SSeg.sv" \
+"../../../../cpe133_labs.srcs/sources_1/new/SevenSeg.sv" \
+"../../../../cpe133_labs.srcs/sources_1/new/Validity.sv" \
+"../../../../cpe133_labs.srcs/sources_1/new/fsm_template.sv" \
+"../../../../cpe133_labs.srcs/sources_1/new/n_bit_register.sv" \
+"../../../../cpe133_labs.srcs/sources_1/new/univ_sseg.sv" \
+"../../../../cpe133_labs.srcs/sources_1/new/Lab7.sv" \
+"../../../../cpe133_labs.srcs/sources_1/new/final_project.sv" \
+"../../../../cpe133_labs.srcs/sources_1/new/switches_encoder.sv" \
+"../../../../cpe133_labs.srcs/sim_1/new/Lab2Sum.sv" \
+"../../../../cpe133_labs.srcs/sim_1/new/Lab1Sim.sv" \
+"../../../../cpe133_labs.srcs/sim_1/new/Lab0Sim.sv" \
+"../../../../cpe133_labs.srcs/sim_1/new/switches_encoder_sim.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

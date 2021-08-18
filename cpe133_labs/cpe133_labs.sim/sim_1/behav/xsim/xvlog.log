@@ -1,0 +1,51 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.srcs/sources_1/new/FA.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FA
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.srcs/sources_1/new/FSM_011101_011001.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM_011101_011001
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.srcs/sources_1/new/HA.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HA
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.srcs/sources_1/new/Lab0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Lab0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.srcs/sources_1/new/Lab1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Lab1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.srcs/sources_1/new/Lab2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Lab2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.srcs/sources_1/new/Lab3.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Lab3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.srcs/sources_1/new/MUX_2_1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_2_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.srcs/sources_1/new/RCA_4_FA.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RCA_4_FA
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.srcs/sources_1/new/RC_Add_Sub.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RC_Add_Sub
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.srcs/sources_1/new/RC_Add_Sub_Univ_SSeg.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RC_Add_Sub_Univ_SSeg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.srcs/sources_1/new/SevenSeg.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SevenSeg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.srcs/sources_1/new/Validity.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Validity
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.srcs/sources_1/new/fsm_template.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fsm_template
+WARNING: [VRFC 10-3380] identifier 'START' is used before its declaration [C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.srcs/sources_1/new/fsm_template.sv:19]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.srcs/sources_1/new/n_bit_register.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module n_bit_register
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.srcs/sources_1/new/univ_sseg.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module univ_sseg
+INFO: [VRFC 10-2458] undeclared symbol sclk, assumed default net type wire [C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.srcs/sources_1/new/univ_sseg.sv:94]
+INFO: [VRFC 10-311] analyzing module clk_divder
+INFO: [VRFC 10-311] analyzing module cnt_convert_14b
+INFO: [VRFC 10-311] analyzing module cnt_convert_7b
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.srcs/sources_1/new/Lab7.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Lab7
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.srcs/sources_1/new/final_project.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module final_project
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.srcs/sources_1/new/switches_encoder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module switches_encoder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.srcs/sim_1/new/Lab2Sum.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Lab2Sum
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.srcs/sim_1/new/Lab1Sim.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Lab1Sim
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.srcs/sim_1/new/Lab0Sim.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Lab0Sim
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.srcs/sim_1/new/switches_encoder_sim.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module switches_encoder_sim
