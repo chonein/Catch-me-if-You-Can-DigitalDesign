@@ -30,7 +30,7 @@ module score_counter(
     
     logic t1 = 0;
     
-    n_bit_counter#(6) counter ( .clk(clk), .reset(t1 | reset), .EN(EN), .UP(1), .count(count) );
+    n_bit_counter#(6) counter ( .clk(clk), .reset(t1 | reset), .EN(EN), .UP(1), .LD(0), .D('0), .count(count) );
     
     always_comb
     begin

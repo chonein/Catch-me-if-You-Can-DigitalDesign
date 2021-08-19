@@ -30,7 +30,7 @@ module health_counter#(parameter START_HEALTH=3)(
     
     logic EN2 = 1;
     
-    n_bit_counter#(6) counter ( .clk(clk), .reset(reset), .EN(EN & EN2), .UP(UP), .count(count) );
+    n_bit_counter#(6) counter ( .clk(clk), .reset(0), .EN(EN & EN2), .UP(UP), .LD(reset), .D(3), .count(count) );
     
     always_comb
     begin

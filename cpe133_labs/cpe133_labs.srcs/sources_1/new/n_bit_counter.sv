@@ -25,6 +25,8 @@ module n_bit_counter#(parameter WIDTH=0)(
     input UP,
     input reset,
     input EN,
+    input LD = 0,
+    input [WIDTH:0] D, 
     output logic [WIDTH:0] count
     );
     
@@ -44,6 +46,10 @@ module n_bit_counter#(parameter WIDTH=0)(
                     begin
                         count = count - 1;
                     end
+            end
+        else if (LD)
+            begin
+                count = D;
             end
         else
             begin
