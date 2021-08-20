@@ -25,22 +25,30 @@ module health_counter#(parameter START_HEALTH=3)(
     input UP,
     input reset,
     input EN,
-    output logic [6:0] count = START_HEALTH
+    output logic [6:0] count = START_HEALTH,
+    output logic counter_zero
     );
     
     logic EN2 = 1;
     
-    n_bit_counter#(6) counter ( .clk(clk), .reset(0), .EN(EN & EN2), .UP(UP), .LD(reset), .D(3), .count(count) );
+    n_bit_counter#(6) counter ( .clk(clk), .reset(0), .EN(EN & EN2), .UP(UP), .LD(reset | counter_zero), .D(3), .count(count) );
     
     always_comb
     begin
-        if (count == 9 || (UP == 0 && count == 0))
+        if (count == 0)
             begin
                 EN2 = 0;
+                counter_zero = 1;
+            end
+        if (count == 9)
+            begin
+                EN2 = 0;
+                counter_zero = 0;
             end
         else
             begin
                 EN2 = 1;
+                counter_zero = 0;
             end
     end
 endmodule
