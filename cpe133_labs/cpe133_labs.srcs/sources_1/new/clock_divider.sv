@@ -4,12 +4,13 @@
 // Engineer: 
 // 
 // Create Date: 08/18/2021 02:05:18 PM
-// Design Name: 
+// Design Name: Clock divider with variable MAX_COUNT
 // Module Name: clock_divider
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
-// Description: 
+// Description: A regular clock divider, but with ability to change the MAX_COUNT.
+//              Gives the ability to actively modify the clock period.
 // 
 // Dependencies: 
 // 
@@ -22,7 +23,7 @@
 
 module clock_divider(
     input clk,
-    input [29:0] MAX_COUNT,
+    input [29:0] MAX_COUNT, // modifiable MAX_COUNT
     output logic sclk = 0
     );
     

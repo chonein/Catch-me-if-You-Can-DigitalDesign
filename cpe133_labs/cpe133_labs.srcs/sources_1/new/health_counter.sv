@@ -1,15 +1,18 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
-// Engineer: 
+// Engineer: Christian Honein
 // 
 // Create Date: 08/18/2021 05:00:10 PM
-// Design Name: 
+// Design Name: Health counter default at 3
 // Module Name: health_counter
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
-// Description: 
+// Description: Health counter that defaults to 3. 0<=health<=9
+//              if the health count becomes 0, counter_zero = 1 which signals a reset for all the game.
+//              
+//
 // 
 // Dependencies: 
 // 
@@ -35,18 +38,18 @@ module health_counter#(parameter START_HEALTH=3)(
     
     always_comb
     begin
-        if (count == 0)
+        if (count == 0) // signals a reset for all of the game.
             begin
                 EN2 = 0;
                 counter_zero = 1;
             end
-        if (count == 9)
+        if (count == 9) // prevent counter from becoming greater than 9
             begin
                 EN2 = 0;
                 counter_zero = 0;
             end
         else
-            begin
+            begin // normal functioning of counter
                 EN2 = 1;
                 counter_zero = 0;
             end

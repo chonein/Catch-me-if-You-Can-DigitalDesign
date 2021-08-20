@@ -4,12 +4,14 @@
 // Engineer: 
 // 
 // Create Date: 08/18/2021 04:23:59 PM
-// Design Name: 
+// Design Name: Score counter 0<=score<=99
 // Module Name: score_counter
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
-// Description: 
+// Description: Counts the score from 0 to 99 inclusive
+//              Starting value is at 0. When 99 is reached at_max is 1.
+//              When max is reached, counter automatically reset itself.
 // 
 // Dependencies: 
 // 
@@ -28,23 +30,23 @@ module score_counter(
     output logic at_max = 0
     );
     
-    logic t1 = 0;
+    logic t1 = 0; // internal reset of counter
     
     n_bit_counter#(6) counter ( .clk(clk), .reset(t1 | reset), .EN(EN), .UP(1), .LD(0), .D('0), .count(count) );
     
     always_comb
     begin
-        if (count == 99)
+        if (count == 99) // output 1 when 99 is reached
             begin
                 at_max = 1;
                 t1 = 0;
             end
-        else if (count == 100)
+        else if (count > 99) // resets count to 0, when value > 99
             begin
                 at_max = 0;
                 t1 = 1;
             end
-        else
+        else // regular functioning of the counter
             begin
                 at_max = 0;
                 t1 = 0;

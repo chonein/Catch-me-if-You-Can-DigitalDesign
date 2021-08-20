@@ -4,12 +4,13 @@
 // Engineer: 
 // 
 // Create Date: 08/18/2021 12:08:31 PM
-// Design Name: 
+// Design Name: Button toggle for reset and mode buttons 
 // Module Name: button_press_register
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
-// Description: 
+// Description: This is based on a t flip-flop.
+//              In this case the T input is the button press which switches the current value of Q. 
 // 
 // Dependencies: 
 // 
@@ -30,15 +31,15 @@ module button_press_register(
     
     always_ff @ (posedge clk, posedge R)
     begin
-        if (R)
+        if (R) // active high asynchronus reset t flip-flop
             begin
                 Q = '0;
             end
-        else if (S)
+        else if (S) // active high set t flip-flop
             begin
                 Q = '1;
             end
-        else if (T)
+        else if (T) // negate Q if T is 1
             begin
                 Q = ~Q;
             end
