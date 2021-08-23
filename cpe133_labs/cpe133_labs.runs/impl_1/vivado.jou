@@ -2,11 +2,11 @@
 # Vivado v2020.1 (64-bit)
 # SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
 # IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-# Start of session at: Tue Aug 17 22:11:02 2021
-# Process ID: 6632
+# Start of session at: Mon Aug 23 09:29:44 2021
+# Process ID: 5220
 # Current directory: C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.runs/impl_1
-# Command line: vivado.exe -log final_project.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source final_project.tcl -notrace
-# Log file: C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.runs/impl_1/final_project.vdi
+# Command line: vivado.exe -log CatchMeIfYouCan.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source CatchMeIfYouCan.tcl -notrace
+# Log file: C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.runs/impl_1/CatchMeIfYouCan.vdi
 # Journal file: C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
-source final_project.tcl -notrace
+source CatchMeIfYouCan.tcl -notrace

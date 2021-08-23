@@ -1,6 +1,6 @@
 
 *** Running vivado
-    with args -log final_project.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source final_project.tcl
+    with args -log CatchMeIfYouCan.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source CatchMeIfYouCan.tcl
 
 
 
@@ -9,20 +9,20 @@
   **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
     ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 
-source final_project.tcl -notrace
-Command: synth_design -top final_project -part xc7a35tcpg236-1
+source CatchMeIfYouCan.tcl -notrace
+Command: synth_design -top CatchMeIfYouCan -part xc7a35tcpg236-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 5700
+INFO: [Synth 8-7075] Helper process launched with PID 7868
 WARNING: [Synth 8-6901] identifier 'START' is used before its declaration [C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/fsm_template.sv:19]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1036.840 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1035.238 ; gain = 0.000
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'final_project' [C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/final_project.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'CatchMeIfYouCan' [C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/CatchMeIfYouCan.sv:16]
 INFO: [Synth 8-6157] synthesizing module 'univ_sseg' [C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/univ_sseg.sv:56]
 INFO: [Synth 8-6157] synthesizing module 'cnt_convert_14b' [C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/univ_sseg.sv:249]
 INFO: [Synth 8-226] default block is never used [C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/univ_sseg.sv:268]
@@ -40,69 +40,136 @@ INFO: [Synth 8-226] default block is never used [C:/Users/Christian Honein/Docum
 INFO: [Synth 8-226] default block is never used [C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/univ_sseg.sv:155]
 INFO: [Synth 8-226] default block is never used [C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/univ_sseg.sv:167]
 INFO: [Synth 8-6155] done synthesizing module 'univ_sseg' (4#1) [C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/univ_sseg.sv:56]
-INFO: [Synth 8-6155] done synthesizing module 'final_project' (5#1) [C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/final_project.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'CatchMeFSM' [C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/CatchMeFSM.sv:17]
+	Parameter START bound to: 5'b10000 
+	Parameter PAUSE bound to: 5'b11111 
+	Parameter LED0 bound to: 5'b00000 
+	Parameter LED1 bound to: 5'b00001 
+	Parameter LED2 bound to: 5'b00010 
+	Parameter LED3 bound to: 5'b00011 
+	Parameter LED4 bound to: 5'b00100 
+	Parameter LED5 bound to: 5'b00101 
+	Parameter LED6 bound to: 5'b00110 
+	Parameter LED7 bound to: 5'b00111 
+	Parameter LED8 bound to: 5'b01000 
+	Parameter LED9 bound to: 5'b01001 
+	Parameter LED10 bound to: 5'b01010 
+	Parameter LED11 bound to: 5'b01011 
+	Parameter LED12 bound to: 5'b01100 
+	Parameter LED13 bound to: 5'b01101 
+	Parameter LED14 bound to: 5'b01110 
+	Parameter LED15 bound to: 5'b01111 
+INFO: [Synth 8-6155] done synthesizing module 'CatchMeFSM' (5#1) [C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/CatchMeFSM.sv:17]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider' [C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/clock_divider.sv:24]
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider' (6#1) [C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/clock_divider.sv:24]
+INFO: [Synth 8-6157] synthesizing module 'LEDS_DECODER' [C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/LEDS_DECODER.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'LEDS_DECODER' (7#1) [C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/LEDS_DECODER.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'switches_encoder' [C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/switches_encoder.sv:26]
+INFO: [Synth 8-6155] done synthesizing module 'switches_encoder' (8#1) [C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/switches_encoder.sv:26]
+INFO: [Synth 8-6157] synthesizing module 'health_counter' [C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/health_counter.sv:26]
+	Parameter START_HEALTH bound to: 3 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'n_bit_counter' [C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/n_bit_counter.sv:23]
+	Parameter WIDTH bound to: 6 - type: integer 
+	Parameter START_VAL bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'n_bit_counter' (9#1) [C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/n_bit_counter.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'health_counter' (10#1) [C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/health_counter.sv:26]
+INFO: [Synth 8-6157] synthesizing module 'score_counter' [C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/score_counter.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'n_bit_counter__parameterized0' [C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/n_bit_counter.sv:23]
+	Parameter WIDTH bound to: 6 - type: integer 
+	Parameter START_VAL bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'n_bit_counter__parameterized0' (10#1) [C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/n_bit_counter.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'score_counter' (11#1) [C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/score_counter.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'button_press_register' [C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/button_press_register.sv:24]
+INFO: [Synth 8-6155] done synthesizing module 'button_press_register' (12#1) [C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/button_press_register.sv:24]
+WARNING: [Synth 8-7071] port 'S' of module 'button_press_register' is unconnected for instance 'pause' [C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/CatchMeIfYouCan.sv:37]
+WARNING: [Synth 8-7071] port 'R' of module 'button_press_register' is unconnected for instance 'pause' [C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/CatchMeIfYouCan.sv:37]
+WARNING: [Synth 8-7023] instance 'pause' of module 'button_press_register' has 5 connections declared, but only 3 given [C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/CatchMeIfYouCan.sv:37]
+WARNING: [Synth 8-7071] port 'S' of module 'button_press_register' is unconnected for instance 'mode' [C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/CatchMeIfYouCan.sv:38]
+WARNING: [Synth 8-7071] port 'R' of module 'button_press_register' is unconnected for instance 'mode' [C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/CatchMeIfYouCan.sv:38]
+WARNING: [Synth 8-7023] instance 'mode' of module 'button_press_register' has 5 connections declared, but only 3 given [C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/CatchMeIfYouCan.sv:38]
+INFO: [Synth 8-6157] synthesizing module 'stateRegister' [C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/stateRegister.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'stateRegister' (13#1) [C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/stateRegister.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'CatchMeIfYouCan' (14#1) [C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/CatchMeIfYouCan.sv:16]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1037.750 ; gain = 0.910
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1042.492 ; gain = 7.254
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1037.750 ; gain = 0.910
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1042.492 ; gain = 7.254
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1037.750 ; gain = 0.910
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1042.492 ; gain = 7.254
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1037.750 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1042.492 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/constrs_1/new/Basys3Constraints.xdc]
 Finished Parsing XDC File [C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/constrs_1/new/Basys3Constraints.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/constrs_1/new/Basys3Constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/final_project_propImpl.xdc].
-Resolution: To avoid this warning, move constraints listed in [.Xil/final_project_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/constrs_1/new/Basys3Constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/CatchMeIfYouCan_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/CatchMeIfYouCan_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1152.363 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1158.168 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1152.363 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1158.168 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1152.363 ; gain = 115.523
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1158.168 ; gain = 122.930
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1152.363 ; gain = 115.523
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1158.168 ; gain = 122.930
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1152.363 ; gain = 115.523
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1158.168 ; gain = 122.930
 ---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'randD_reg' [C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/CatchMeFSM.sv:85]
+WARNING: [Synth 8-327] inferring latch for variable 'randC_reg' [C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/CatchMeFSM.sv:84]
+WARNING: [Synth 8-327] inferring latch for variable 'randB_reg' [C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/CatchMeFSM.sv:85]
+WARNING: [Synth 8-327] inferring latch for variable 'randA_reg' [C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/CatchMeFSM.sv:83]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1152.363 ; gain = 115.523
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1158.168 ; gain = 122.930
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
+	   2 Input   30 Bit       Adders := 1     
 	   2 Input   14 Bit       Adders := 18    
+	   2 Input    7 Bit       Adders := 2     
 	   2 Input    4 Bit       Adders := 14    
 	   2 Input    2 Bit       Adders := 1     
 +---Registers : 
+	                7 Bit    Registers := 2     
+	                5 Bit    Registers := 2     
 	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
 +---Muxes : 
+	   2 Input   16 Bit        Muxes := 1     
 	   4 Input   14 Bit        Muxes := 1     
 	   2 Input    8 Bit        Muxes := 2     
+	   2 Input    7 Bit        Muxes := 2     
+	   3 Input    5 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 16    
+	  17 Input    5 Bit        Muxes := 1     
 	   8 Input    4 Bit        Muxes := 1     
 	   4 Input    4 Bit        Muxes := 5     
+	   2 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 42    
+	  19 Input    1 Bit        Muxes := 8     
+	   3 Input    1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -119,25 +186,40 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1152.363 ; gain = 115.523
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1158.168 ; gain = 122.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping	Report
++----------------+-------------+---------------+----------------+
+|Module Name     | RTL Object  | Depth x Width | Implemented As | 
++----------------+-------------+---------------+----------------+
+|CatchMeFSM      | led         | 32x5          | LUT            | 
+|CatchMeIfYouCan | catchme/led | 32x5          | LUT            | 
++----------------+-------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1152.363 ; gain = 115.523
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1158.168 ; gain = 122.930
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1152.363 ; gain = 115.523
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1161.492 ; gain = 126.254
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1153.238 ; gain = 116.398
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1171.324 ; gain = 136.086
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -155,37 +237,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1159.004 ; gain = 122.164
+Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1176.527 ; gain = 141.289
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1159.004 ; gain = 122.164
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1176.527 ; gain = 141.289
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1159.004 ; gain = 122.164
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1176.527 ; gain = 141.289
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1159.004 ; gain = 122.164
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1176.527 ; gain = 141.289
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1159.004 ; gain = 122.164
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1176.527 ; gain = 141.289
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1159.004 ; gain = 122.164
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1176.527 ; gain = 141.289
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -202,34 +284,40 @@ Report Cell Usage:
 |      |Cell   |Count |
 +------+-------+------+
 |1     |BUFG   |     1|
-|2     |CARRY4 |     4|
-|3     |LUT1   |     3|
-|4     |LUT2   |     6|
-|5     |FDRE   |    16|
-|6     |IBUF   |     1|
-|7     |OBUF   |    12|
-|8     |OBUFT  |    16|
+|2     |CARRY4 |    24|
+|3     |LUT1   |     7|
+|4     |LUT2   |    23|
+|5     |LUT3   |    16|
+|6     |LUT4   |    22|
+|7     |LUT5   |    38|
+|8     |LUT6   |    92|
+|9     |FDCE   |     7|
+|10    |FDRE   |    65|
+|11    |LD     |     4|
+|12    |IBUF   |    19|
+|13    |OBUF   |    28|
 +------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 1159.004 ; gain = 122.164
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1176.527 ; gain = 141.289
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:29 . Memory (MB): peak = 1159.004 ; gain = 7.551
-Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 1159.004 ; gain = 122.164
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:32 . Memory (MB): peak = 1176.527 ; gain = 25.613
+Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1176.527 ; gain = 141.289
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1159.004 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1188.551 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 28 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1165.320 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1188.590 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
+  A total of 4 instances were transformed.
+  LD => LDCE: 4 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-32 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+52 Infos, 12 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:44 . Memory (MB): peak = 1165.320 ; gain = 128.480
-INFO: [Common 17-1381] The checkpoint 'C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.runs/synth_1/final_project.dcp' has been generated.
-INFO: [runtcl-4] Executing : report_utilization -file final_project_utilization_synth.rpt -pb final_project_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Aug 17 22:05:57 2021...
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 1188.590 ; gain = 153.352
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.runs/synth_1/CatchMeIfYouCan.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file CatchMeIfYouCan_utilization_synth.rpt -pb CatchMeIfYouCan_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Aug 23 09:27:34 2021...

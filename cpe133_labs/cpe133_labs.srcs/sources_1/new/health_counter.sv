@@ -28,13 +28,13 @@ module health_counter#(parameter START_HEALTH=3)(
     input UP,
     input reset,
     input EN,
-    output logic [6:0] count = START_HEALTH,
+    output logic [6:0] count,
     output logic counter_zero
     );
     
     logic EN2 = 1;
     
-    n_bit_counter#(6) counter ( .clk(clk), .reset(0), .EN(EN & EN2), .UP(UP), .LD(reset | counter_zero), .D(3), .count(count) );
+    n_bit_counter#(6, START_HEALTH) counter ( .clk(clk), .reset(0), .EN(EN & EN2), .UP(UP), .LD(reset | counter_zero), .D(3), .count(count) );
     
     always_comb
     begin
@@ -43,7 +43,7 @@ module health_counter#(parameter START_HEALTH=3)(
                 EN2 = 0;
                 counter_zero = 1;
             end
-        if (count == 9) // prevent counter from becoming greater than 9
+        else if (count == 9) // prevent counter from becoming greater than 9
             begin
                 EN2 = 0;
                 counter_zero = 0;

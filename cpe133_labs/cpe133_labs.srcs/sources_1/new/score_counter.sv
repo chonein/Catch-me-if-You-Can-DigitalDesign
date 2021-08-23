@@ -26,13 +26,13 @@ module score_counter(
     input clk,
     input reset,
     input EN,
-    output logic [6:0] count = 0,
+    output logic [6:0] count,
     output logic at_max = 0
     );
     
     logic t1 = 0; // internal reset of counter
     
-    n_bit_counter#(6) counter ( .clk(clk), .reset(t1 | reset), .EN(EN), .UP(1), .LD(0), .D('0), .count(count) );
+    n_bit_counter#(6, 0) counter ( .clk(clk), .reset(t1 | reset), .EN(EN), .UP(1), .LD(0), .D('0), .count(count) );
     
     always_comb
     begin

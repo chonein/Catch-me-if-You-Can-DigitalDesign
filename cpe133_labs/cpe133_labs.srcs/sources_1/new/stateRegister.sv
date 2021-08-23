@@ -31,9 +31,9 @@ module stateRegister(
     
     always_ff @ (posedge clk, posedge reset)
     begin
-        if (reset) // active low reset, sets saved state to FSM start state.
-            savedState = 5'b00000;
-        else if (D[4] == 0) // MSB of the input D acts like an active high enable.
+//        if (reset) // active low reset, sets saved state to FSM start state.
+//            savedState = 5'b00000;
+        if (D[4] == 0) // MSB of the input D acts like an active high enable.
             savedState = D;
     end
     
