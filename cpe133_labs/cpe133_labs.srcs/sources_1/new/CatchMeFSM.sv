@@ -87,16 +87,16 @@ module CatchMeFSM(
             else
             begin
                 NS = LED1;
-                if (switch == led)
-                begin
-                    scoreEN = 1;
-                    healthEN = 0;
-                end
-                else
-                begin
-                    scoreEN = 0;
-                    healthEN = 1;
-                end
+            end
+            if (switch == led)
+            begin
+                scoreEN = 1;
+                healthEN = 0;
+            end
+            else
+            begin
+                scoreEN = 0;
+                healthEN = 1;
             end
          end
          
@@ -112,16 +112,16 @@ module CatchMeFSM(
             else
             begin
                 NS = LED2;
-                if (switch == led)
-                begin
-                    scoreEN = 1;
-                    healthEN = 0;
-                end
-                else
-                begin
-                    scoreEN = 0;
-                    healthEN = 1;
-                end
+            end
+            if (switch == led)
+            begin
+                scoreEN = 1;
+                healthEN = 0;
+            end
+            else
+            begin
+                scoreEN = 0;
+                healthEN = 1;
             end
          end
          
@@ -137,16 +137,16 @@ module CatchMeFSM(
             else
             begin
                 NS = LED3;
-                if (switch == led)
-                begin
-                    scoreEN = 1;
-                    healthEN = 0;
-                end
-                else
-                begin
-                    scoreEN = 0;
-                    healthEN = 1;
-                end
+            end
+            if (switch == led)
+            begin
+                scoreEN = 1;
+                healthEN = 0;
+            end
+            else
+            begin
+                scoreEN = 0;
+                healthEN = 1;
             end
          end
          
@@ -162,16 +162,16 @@ module CatchMeFSM(
             else
             begin
                 NS = LED4;
-                if (switch == led)
-                begin
-                    scoreEN = 1;
-                    healthEN = 0;
-                end
-                else
-                begin
-                    scoreEN = 0;
-                    healthEN = 1;
-                end
+            end
+            if (switch == led)
+            begin
+                scoreEN = 1;
+                healthEN = 0;
+            end
+            else
+            begin
+                scoreEN = 0;
+                healthEN = 1;
             end
          end
          
@@ -187,16 +187,16 @@ module CatchMeFSM(
             else
             begin
                 NS = LED5;
-                if (switch == led)
-                begin
-                    scoreEN = 1;
-                    healthEN = 0;
-                end
-                else
-                begin
-                    scoreEN = 0;
-                    healthEN = 1;
-                end
+            end
+            if (switch == led)
+            begin
+                scoreEN = 1;
+                healthEN = 0;
+            end
+            else
+            begin
+                scoreEN = 0;
+                healthEN = 1;
             end
          end
          
@@ -212,16 +212,16 @@ module CatchMeFSM(
             else
             begin
                 NS = LED6;
-                if (switch == led)
-                begin
-                    scoreEN = 1;
-                    healthEN = 0;
-                end
-                else
-                begin
-                    scoreEN = 0;
-                    healthEN = 1;
-                end
+            end
+            if (switch == led)
+            begin
+                scoreEN = 1;
+                healthEN = 0;
+            end
+            else
+            begin
+                scoreEN = 0;
+                healthEN = 1;
             end
          end
          
@@ -237,16 +237,16 @@ module CatchMeFSM(
             else
             begin
                 NS = LED7;
-                if (switch == led)
-                begin
-                    scoreEN = 1;
-                    healthEN = 0;
-                end
-                else
-                begin
-                    scoreEN = 0;
-                    healthEN = 1;
-                end
+            end
+            if (switch == led)
+            begin
+                scoreEN = 1;
+                healthEN = 0;
+            end
+            else
+            begin
+                scoreEN = 0;
+                healthEN = 1;
             end
          end
          
@@ -262,16 +262,16 @@ module CatchMeFSM(
             else
             begin
                 NS = LED8;
-                if (switch == led)
-                begin
-                    scoreEN = 1;
-                    healthEN = 0;
-                end
-                else
-                begin
-                    scoreEN = 0;
-                    healthEN = 1;
-                end
+            end
+            if (switch == led)
+            begin
+                scoreEN = 1;
+                healthEN = 0;
+            end
+            else
+            begin
+                scoreEN = 0;
+                healthEN = 1;
             end
          end
          
@@ -287,16 +287,16 @@ module CatchMeFSM(
             else
             begin
                 NS = LED9;
-                if (switch == led)
-                begin
-                    scoreEN = 1;
-                    healthEN = 0;
-                end
-                else
-                begin
-                    scoreEN = 0;
-                    healthEN = 1;
-                end
+            end
+            if (switch == led)
+            begin
+                scoreEN = 1;
+                healthEN = 0;
+            end
+            else
+            begin
+                scoreEN = 0;
+                healthEN = 1;
             end
          end
          
@@ -312,16 +312,16 @@ module CatchMeFSM(
             else
             begin
                 NS = LED10;
-                if (switch == led)
-                begin
-                    scoreEN = 1;
-                    healthEN = 0;
-                end
-                else
-                begin
-                    scoreEN = 0;
-                    healthEN = 1;
-                end
+            end
+            if (switch == led)
+            begin
+                scoreEN = 1;
+                healthEN = 0;
+            end
+            else
+            begin
+                scoreEN = 0;
+                healthEN = 1;
             end
          end
          
@@ -337,16 +337,16 @@ module CatchMeFSM(
             else
             begin
                 NS = LED11;
-                if (switch == led)
-                begin
-                    scoreEN = 1;
-                    healthEN = 0;
-                end
-                else
-                begin
-                    scoreEN = 0;
-                    healthEN = 1;
-                end
+            end
+            if (switch == led)
+            begin
+                scoreEN = 1;
+                healthEN = 0;
+            end
+            else
+            begin
+                scoreEN = 0;
+                healthEN = 1;
             end
          end
          
@@ -362,16 +362,16 @@ module CatchMeFSM(
             else
             begin
                 NS = LED12;
-                if (switch == led)
-                begin
-                    scoreEN = 1;
-                    healthEN = 0;
-                end
-                else
-                begin
-                    scoreEN = 0;
-                    healthEN = 1;
-                end
+            end
+            if (switch == led)
+            begin
+                scoreEN = 1;
+                healthEN = 0;
+            end
+            else
+            begin
+                scoreEN = 0;
+                healthEN = 1;
             end
          end
          
@@ -387,16 +387,16 @@ module CatchMeFSM(
             else
             begin
                 NS = LED13;
-                if (switch == led)
-                begin
-                    scoreEN = 1;
-                    healthEN = 0;
-                end
-                else
-                begin
-                    scoreEN = 0;
-                    healthEN = 1;
-                end
+            end
+            if (switch == led)
+            begin
+                scoreEN = 1;
+                healthEN = 0;
+            end
+            else
+            begin
+                scoreEN = 0;
+                healthEN = 1;
             end
          end
          
@@ -412,16 +412,16 @@ module CatchMeFSM(
             else
             begin
                 NS = LED14;
-                if (switch == led)
-                begin
-                    scoreEN = 1;
-                    healthEN = 0;
-                end
-                else
-                begin
-                    scoreEN = 0;
-                    healthEN = 1;
-                end
+            end
+            if (switch == led)
+            begin
+                scoreEN = 1;
+                healthEN = 0;
+            end
+            else
+            begin
+                scoreEN = 0;
+                healthEN = 1;
             end
          end
          
@@ -437,16 +437,16 @@ module CatchMeFSM(
             else
             begin
                 NS = LED15;
-                if (switch == led)
-                begin
-                    scoreEN = 1;
-                    healthEN = 0;
-                end
-                else
-                begin
-                    scoreEN = 0;
-                    healthEN = 1;
-                end
+            end
+            if (switch == led)
+            begin
+                scoreEN = 1;
+                healthEN = 0;
+            end
+            else
+            begin
+                scoreEN = 0;
+                healthEN = 1;
             end
          end
          
@@ -462,16 +462,16 @@ module CatchMeFSM(
             else
             begin
                 NS = LED0;
-                if (switch == led)
-                begin
-                    scoreEN = 1;
-                    healthEN = 0;
-                end
-                else
-                begin
-                    scoreEN = 0;
-                    healthEN = 1;
-                end
+            end
+            if (switch == led)
+            begin
+                scoreEN = 1;
+                healthEN = 0;
+            end
+            else
+            begin
+                scoreEN = 0;
+                healthEN = 1;
             end
          end
          
