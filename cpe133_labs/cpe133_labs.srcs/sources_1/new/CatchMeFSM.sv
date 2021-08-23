@@ -17,9 +17,8 @@
 module CatchMeFSM(
     input clk, reset, mode, pause, // mode 0 = normal, mode 1 = random
     input [4:0] switch,
-    input [6:0] health,
     input [4:0] prevState,
-    output logic scoreEN, healthEN, countReset, prevStateLoad, //MEALY, active high
+    output logic scoreEN, healthEN, //MEALY, active high
     output logic [4:0] led //MOORE
     );
     
@@ -27,7 +26,7 @@ module CatchMeFSM(
     logic randA, randB, randC, randD;
     
     //assign bit values to your states
-    parameter [4:0] START = 5'b10000, PAUSE = 5'b11111, END = 5'b10001, LED0 = 5'h0, LED1 = 5'h1, LED2 = 5'h2, LED3 = 5'h3, LED4 = 5'h4, LED5 = 5'h5, LED6 = 5'h6, LED7 = 5'h7, LED8 = 5'h8, LED9 = 5'h9, LED10 = 5'hA, LED11 = 5'hB, LED12 = 5'hC, LED13 = 5'hD, LED14 = 5'hE, LED15 = 5'hF;
+    parameter [4:0] START = 5'b10000, PAUSE = 5'b11111, LED0 = 5'h0, LED1 = 5'h1, LED2 = 5'h2, LED3 = 5'h3, LED4 = 5'h4, LED5 = 5'h5, LED6 = 5'h6, LED7 = 5'h7, LED8 = 5'h8, LED9 = 5'h9, LED10 = 5'hA, LED11 = 5'hB, LED12 = 5'hC, LED13 = 5'hD, LED14 = 5'hE, LED15 = 5'hF;
     
     //declare present state (PS) and next state (NS) variables
     //initialize PS to the beginning state
@@ -35,31 +34,19 @@ module CatchMeFSM(
     logic [4:0] PS = START;
     
     //sequential logic to change states
-    always_ff @ (posedge clk, posedge reset, posedge pause)
+    always_ff @ (posedge clk)
     begin
         if (reset)
         begin
             PS = START;
-            countReset = 1;
-            prevStateLoad = 1;
         end
         else if (pause)
         begin
             PS = PAUSE;
-            countReset = 0;
-            prevStateLoad = 0;
-        end
-        else if (health == 0)
-        begin
-            PS = END;
-            countReset = 0;
-            prevStateLoad = 1;
         end
         else
         begin
             PS = NS;
-            countReset = 0;
-            prevStateLoad = 1;
         end
     end
     
@@ -83,17 +70,9 @@ module CatchMeFSM(
          begin
             scoreEN = 0;
             healthEN = 0;
-            led = 5'b10000;
             NS = prevState;
-            // don't need to set a new NS bcs it should revert back to the previous one
-         end
-         
-         END:
-         begin
-            scoreEN = 0;
-            healthEN = 0;
             led = 5'b10000;
-            // no next state bcs it ends here (until reset button is pressed?)
+            // don't need to set a new NS bcs it should revert back to the previous one
          end
          
          LED0:
