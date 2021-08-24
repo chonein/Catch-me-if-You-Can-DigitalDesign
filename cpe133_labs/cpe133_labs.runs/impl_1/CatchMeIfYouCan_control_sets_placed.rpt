@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-| Date         : Tue Aug 24 10:25:03 2021
+| Date         : Tue Aug 24 11:53:54 2021
 | Host         : DESKTOP-G5MGV6T running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file CatchMeIfYouCan_control_sets_placed.rpt
 | Design       : CatchMeIfYouCan
@@ -41,8 +41,8 @@ Table of Contents
 +--------------------+-------+
 | Total control sets |    14 |
 | >= 0 to < 4        |     7 |
-| >= 4 to < 6        |     2 |
-| >= 6 to < 8        |     1 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     2 |
 | >= 8 to < 10       |     0 |
 | >= 10 to < 12      |     0 |
 | >= 12 to < 14      |     0 |
@@ -58,35 +58,35 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              27 |           14 |
+| No           | No                    | No                     |              25 |           14 |
 | No           | No                    | Yes                    |              27 |            7 |
-| No           | Yes                   | No                     |              64 |           19 |
+| No           | Yes                   | No                     |              64 |           18 |
 | Yes          | No                    | No                     |               4 |            3 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |              12 |            4 |
+| Yes          | Yes                   | No                     |              14 |            6 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+----------------------------+---------------------------------+------------------------------------+------------------+----------------+--------------+
-|        Clock Signal        |          Enable Signal          |          Set/Reset Signal          | Slice Load Count | Bel Load Count | Bels / Slice |
-+----------------------------+---------------------------------+------------------------------------+------------------+----------------+--------------+
-|  catchme/randC_reg_i_2_n_0 |                                 |                                    |                1 |              1 |         1.00 |
-|  catchme/randA_reg_i_2_n_0 |                                 |                                    |                1 |              1 |         1.00 |
-|  catchme/randD_reg_i_2_n_0 |                                 |                                    |                1 |              1 |         1.00 |
-|  catchme/randB_reg_i_2_n_0 |                                 |                                    |                1 |              1 |         1.00 |
-|  s_seg/CLK_DIV/CLK         |                                 |                                    |                1 |              2 |         2.00 |
-|  clkDiv2/sclk_reg_0        |                                 |                                    |                1 |              2 |         2.00 |
-|  t1_BUFG                   |                                 |                                    |                2 |              3 |         1.50 |
-|  t1_BUFG                   | catchme/PS[4]                   |                                    |                3 |              4 |         1.33 |
-|  t1_BUFG                   | health/counter/count[6]_i_2_n_0 | health/counter/count[6]_i_1__0_n_0 |                2 |              5 |         2.50 |
-|  t1_BUFG                   | catchme/E[0]                    | health/counter/SR[0]               |                2 |              7 |         3.50 |
-|  clk_IBUF_BUFG             |                                 |                                    |                6 |             16 |         2.67 |
-|  clk_IBUF_BUFG             |                                 | clkDiv/clear                       |                8 |             30 |         3.75 |
-|  clk_IBUF_BUFG             |                                 | clkDiv2/count[0]_i_1__0_n_0        |                8 |             30 |         3.75 |
-|  t1_BUFG                   |                                 | health/counter/count_reg[5]_0      |               10 |             31 |         3.10 |
-+----------------------------+---------------------------------+------------------------------------+------------------+----------------+--------------+
++----------------------------+----------------------------+----------------------------------+------------------+----------------+--------------+
+|        Clock Signal        |        Enable Signal       |         Set/Reset Signal         | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------------------+----------------------------+----------------------------------+------------------+----------------+--------------+
+|  catchme/randA_reg_i_2_n_0 |                            |                                  |                1 |              1 |         1.00 |
+|  catchme/randB_reg_i_2_n_0 |                            |                                  |                1 |              1 |         1.00 |
+|  catchme/randC_reg_i_2_n_0 |                            |                                  |                1 |              1 |         1.00 |
+|  catchme/randD_reg_i_2_n_0 |                            |                                  |                1 |              1 |         1.00 |
+|  t1_BUFG                   |                            |                                  |                1 |              1 |         1.00 |
+|  s_seg/CLK_DIV/CLK         |                            |                                  |                1 |              2 |         2.00 |
+|  clkDiv2/sclk_reg_0        |                            |                                  |                2 |              2 |         1.00 |
+|  t1_BUFG                   | catchme/PS[4]              |                                  |                3 |              4 |         1.33 |
+|  t1_BUFG                   | catchme/E[0]               | health/counter/SS[0]             |                3 |              7 |         2.33 |
+|  t1_BUFG                   | catchme/PS_reg[4]_inv_0[0] | health/counter/count_reg[5]_2[0] |                3 |              7 |         2.33 |
+|  clk_IBUF_BUFG             |                            |                                  |                6 |             16 |         2.67 |
+|  clk_IBUF_BUFG             |                            | clkDiv/clear                     |                8 |             30 |         3.75 |
+|  clk_IBUF_BUFG             |                            | clkDiv2/count[0]_i_1__1_n_0      |                8 |             30 |         3.75 |
+|  t1_BUFG                   |                            | health/counter/SS[0]             |                9 |             31 |         3.44 |
++----------------------------+----------------------------+----------------------------------+------------------+----------------+--------------+
 
 

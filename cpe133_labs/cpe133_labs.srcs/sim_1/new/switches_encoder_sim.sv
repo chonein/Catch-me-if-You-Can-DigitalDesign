@@ -1,22 +1,9 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
+// Engineer: Christian Honein
 // Create Date: 08/17/2021 08:52:13 PM
-// Design Name: 
 // Module Name: switches_encoder_sim
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
+// Description: Simulation file
 //////////////////////////////////////////////////////////////////////////////////
 
 

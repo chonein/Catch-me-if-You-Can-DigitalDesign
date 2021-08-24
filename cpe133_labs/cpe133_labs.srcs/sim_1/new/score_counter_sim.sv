@@ -1,22 +1,9 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
+// Engineer: Christian Honein
 // Create Date: 08/18/2021 04:31:24 PM
-// Design Name: 
 // Module Name: score_counter_sim
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
+// Description: Simulation file
 //////////////////////////////////////////////////////////////////////////////////
 
 

@@ -2,8 +2,8 @@
 # Vivado v2020.1 (64-bit)
 # SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
 # IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-# Start of session at: Tue Aug 24 10:22:58 2021
-# Process ID: 5608
+# Start of session at: Tue Aug 24 11:52:16 2021
+# Process ID: 8352
 # Current directory: C:/Users/Christian Honein/Desktop/v2/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.runs/synth_1
 # Command line: vivado.exe -log CatchMeIfYouCan.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source CatchMeIfYouCan.tcl
 # Log file: C:/Users/Christian Honein/Desktop/v2/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.runs/synth_1/CatchMeIfYouCan.vds

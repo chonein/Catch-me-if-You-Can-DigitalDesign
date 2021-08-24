@@ -1,24 +1,14 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Engineer: Christian Honein
-// 
 // Create Date: 08/17/2021 09:34:28 PM
 // Design Name: LED 5:16 DECODER
 // Module Name: LEDS_DECODER
 // Project Name: CatchMeIfYouCan
-// Target Devices: 
-// Tool Versions: 
 // Description: This modulues is based on 4:16 standard decoder.
 //              However, there is one additional bit in the input.
-//              When this most MSB is 1, this means that the LEDS should be off.
+//              When this MSB is 1, this means that the LEDS should be off.
 //              Other wise the LED is on.
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
 //////////////////////////////////////////////////////////////////////////////////
 
 
@@ -50,7 +40,7 @@ module LEDS_DECODER(
             5'h0f: LEDS_DECODED = 16'b1000000000000000;
             
             // dafault case when LED_NUM[4] != 0
-            default: LEDS_DECODED = 'b0; 
+            default: LEDS_DECODED = 'b0; //all leds off
         endcase
     end
     

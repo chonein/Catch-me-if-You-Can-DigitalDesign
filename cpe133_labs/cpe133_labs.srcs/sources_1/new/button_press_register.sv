@@ -1,19 +1,12 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Engineer: Christian Honein
-// 
 // Create Date: 08/18/2021 12:08:31 PM
 // Design Name: Button toggle for reset and mode buttons 
 // Module Name: button_press_register
 // Description: This is based on a t flip-flop.
-//              In this case the T input is the button press which switches the current value of Q. 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
+//              In this case the T input is the button press which switches the current value of Q.
+//              all inputs are active high
 //////////////////////////////////////////////////////////////////////////////////
 
 

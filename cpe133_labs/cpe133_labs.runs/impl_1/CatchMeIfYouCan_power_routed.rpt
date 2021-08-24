@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-| Date             : Tue Aug 24 10:25:36 2021
+| Date             : Tue Aug 24 11:54:20 2021
 | Host             : DESKTOP-G5MGV6T running 64-bit major release  (build 9200)
 | Command          : report_power -file CatchMeIfYouCan_power_routed.rpt -pb CatchMeIfYouCan_power_summary_routed.pb -rpx CatchMeIfYouCan_power_routed.rpx
 | Design           : CatchMeIfYouCan
@@ -53,13 +53,14 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |      474 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      213 |     20800 |            1.02 |
+| Slice Logic    |    <0.001 |      471 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      219 |     20800 |            1.05 |
 |   CARRY4       |    <0.001 |       50 |      8150 |            0.61 |
 |   Register     |    <0.001 |      134 |     41600 |            0.32 |
-|   Others       |     0.000 |       23 |       --- |             --- |
+|   F7/F8 Muxes  |    <0.001 |        2 |     32600 |           <0.01 |
+|   Others       |     0.000 |       22 |       --- |             --- |
 |   BUFG         |     0.000 |        1 |        32 |            3.13 |
-| Signals        |     0.002 |      468 |       --- |             --- |
+| Signals        |     0.002 |      462 |       --- |             --- |
 | I/O            |     0.028 |       47 |       106 |           44.34 |
 | Static Power   |     0.072 |          |           |                 |
 | Total          |     0.104 |          |           |                 |
@@ -72,7 +73,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.013 |       0.004 |      0.010 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.014 |       0.004 |      0.010 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.014 |       0.001 |      0.013 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.009 |       0.008 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |

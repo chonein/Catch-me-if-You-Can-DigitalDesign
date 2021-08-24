@@ -70,6 +70,8 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 1
+set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tcpg236-1
 
@@ -114,6 +116,7 @@ read_verilog -library xil_defaultlib -sv {
   {C:/Users/Christian Honein/Desktop/v2/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/CatchMeFSM.sv}
   {C:/Users/Christian Honein/Desktop/v2/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/CatchMeIfYouCan.sv}
   {C:/Users/Christian Honein/Desktop/v2/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/Accumulator.sv}
+  {C:/Users/Christian Honein/Desktop/v2/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/button_t_flip_flop.sv}
 }
 read_vhdl -library xil_defaultlib {
   {C:/Users/Christian Honein/Desktop/v2/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/bc_dec.vhd}
