@@ -33,7 +33,7 @@ module stateRegister(
     begin
         if (reset) // active high reset, sets saved state to FSM start state.
         begin
-            savedState = 5'b00000;
+            savedState = 5'b10000;
         end
         else if (D[4] == 0) // MSB of the input D acts like an active high enable.
         begin

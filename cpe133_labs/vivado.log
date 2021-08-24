@@ -2,135 +2,37 @@
 # Vivado v2020.1 (64-bit)
 # SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
 # IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-# Start of session at: Fri Jun 18 10:17:59 2021
-# Process ID: 7880
-# Current directory: C:/Users/Christian Honein/Desktop/cpe133_labs
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8624 C:\Users\Christian Honein\Desktop\cpe133_labs\cpe133_labs.xpr
-# Log file: C:/Users/Christian Honein/Desktop/cpe133_labs/vivado.log
-# Journal file: C:/Users/Christian Honein/Desktop/cpe133_labs\vivado.jou
+# Start of session at: Mon Aug 23 17:27:39 2021
+# Process ID: 3524
+# Current directory: C:/Users/Christian Honein/Desktop/v2/Digital_Design_Labs_Project/cpe133_labs
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4100 C:\Users\Christian Honein\Desktop\v2\Digital_Design_Labs_Project\cpe133_labs\cpe133_labs.xpr
+# Log file: C:/Users/Christian Honein/Desktop/v2/Digital_Design_Labs_Project/cpe133_labs/vivado.log
+# Journal file: C:/Users/Christian Honein/Desktop/v2/Digital_Design_Labs_Project/cpe133_labs\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project {C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.xpr}
+open_project {C:/Users/Christian Honein/Desktop/v2/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/Christian Honein/Documents/GitHub/Digital_Design_Labs_Project/cpe133_labs' since last save.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
-open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1018.168 ; gain = 0.000
-update_compile_order -fileset sources_1
-update_compile_order -fileset sim_1
-launch_simulation
-Command: launch_simulation 
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'Lab0Sim' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj Lab0Sim_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.srcs/sources_1/new/Lab0.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Lab0
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.srcs/sim_1/new/Lab0Sim.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Lab0Sim
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl
-INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.sim/sim_1/behav/xsim'
-"xelab -wto ddf4fae36f32478cbea1487a5946d090 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Lab0Sim_behav xil_defaultlib.Lab0Sim xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator 2020.1
-Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto ddf4fae36f32478cbea1487a5946d090 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Lab0Sim_behav xil_defaultlib.Lab0Sim xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Pass Through NonSizing Optimizer
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.Lab0
-Compiling module xil_defaultlib.Lab0Sim
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot Lab0Sim_behav
-
-****** Webtalk v2020.1 (64-bit)
-  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
-  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
-
-source C:/Users/Christian -notrace
-couldn't read file "C:/Users/Christian": no such file or directory
-INFO: [Common 17-206] Exiting Webtalk at Fri Jun 18 10:48:16 2021...
-run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 1034.512 ; gain = 0.000
-INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "Lab0Sim_behav -key {Behavioral:sim_1:Functional:Lab0Sim} -tclbatch {Lab0Sim.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2020.1
-Time resolution is 1 ps
-source Lab0Sim.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-Finished
-xsim: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1034.512 ; gain = 0.000
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'Lab0Sim_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:20 . Memory (MB): peak = 1034.512 ; gain = 0.000
-file mkdir C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.srcs/constrs_1
-can't create directory "C:/Users/Christian": permission denied
-file mkdir C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.srcs/constrs_1
-can't create directory "C:/Users/Christian": permission denied
-file mkdir C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.srcs/constrs_1/new
-can't create directory "C:/Users/Christian": permission denied
-file mkdir C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.srcs/constrs_1/new
-can't create directory "C:/Users/Christian": permission denied
-file mkdir C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.srcs/constrs_1/new
-can't create directory "C:/Users/Christian": permission denied
-file mkdir C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.srcs/constrs_1/new
-can't create directory "C:/Users/Christian": permission denied
-file mkdir C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.srcs/constrs_1
-can't create directory "C:/Users/Christian": permission denied
-file mkdir {C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.srcs/constrs_1/new}
-close [ open {C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.srcs/constrs_1/new/Basys3Constraints.xdc} w ]
-add_files -fileset constrs_1 {{C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.srcs/constrs_1/new/Basys3Constraints.xdc}}
-run 14 us
-run 10 us
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:11 . Memory (MB): peak = 1037.449 ; gain = 0.000
 reset_run synth_1
-WARNING: [Vivado 12-1017] Problems encountered:
-1. Failed to delete one or more files in run directory C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.runs/synth_1
-
 launch_runs impl_1 -jobs 2
-[Fri Jun 18 10:59:09 2021] Launched synth_1...
-Run output will be captured here: C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.runs/synth_1/runme.log
-[Fri Jun 18 10:59:09 2021] Launched impl_1...
-Run output will be captured here: C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.runs/impl_1/runme.log
-launch_runs impl_1 -to_step write_bitstream -jobs 2
-[Fri Jun 18 11:01:42 2021] Launched impl_1...
-Run output will be captured here: C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.runs/impl_1/runme.log
-reset_run impl_1 -prev_step 
-launch_runs impl_1 -to_step write_bitstream -jobs 2
-[Fri Jun 18 11:03:10 2021] Launched impl_1...
-Run output will be captured here: C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.runs/impl_1/runme.log
+[Mon Aug 23 17:51:50 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Christian Honein/Desktop/v2/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.runs/synth_1/runme.log
+[Mon Aug 23 17:51:50 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Christian Honein/Desktop/v2/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.runs/impl_1/runme.log
 reset_run synth_1
-WARNING: [Vivado 12-1017] Problems encountered:
-1. Failed to delete one or more files in run directory C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.runs/synth_1
-
+launch_runs impl_1 -jobs 2
+[Mon Aug 23 17:57:47 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Christian Honein/Desktop/v2/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.runs/synth_1/runme.log
+[Mon Aug 23 17:57:47 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Christian Honein/Desktop/v2/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.runs/impl_1/runme.log
 launch_runs impl_1 -to_step write_bitstream -jobs 2
-[Fri Jun 18 11:06:23 2021] Launched synth_1...
-Run output will be captured here: C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.runs/synth_1/runme.log
-[Fri Jun 18 11:06:23 2021] Launched impl_1...
-Run output will be captured here: C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.runs/impl_1/runme.log
+[Mon Aug 23 18:01:00 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Christian Honein/Desktop/v2/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.runs/impl_1/runme.log
 open_hw_manager
 connect_hw_server -allow_non_jtag
 INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
@@ -153,33 +55,18 @@ INFO: [Labtools 27-2221] Launch Output:
 
 
 
-connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 1034.512 ; gain = 0.000
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 1052.887 ; gain = 5.688
 open_hw_target
 INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B160D5A
-open_hw_target: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2274.984 ; gain = 1240.473
-set_property PROGRAM.FILE {C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.runs/impl_1/Lab0.bit} [get_hw_devices xc7a35t_0]
+open_hw_target: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2355.023 ; gain = 1302.137
+set_property PROGRAM.FILE {C:/Users/Christian Honein/Desktop/v2/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.runs/impl_1/CatchMeIfYouCan.bit} [get_hw_devices xc7a35t_0]
 current_hw_device [get_hw_devices xc7a35t_0]
 refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
 INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
 set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.runs/impl_1/Lab0.bit} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Christian Honein/Desktop/v2/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.runs/impl_1/CatchMeIfYouCan.bit} [get_hw_devices xc7a35t_0]
 program_hw_devices [get_hw_devices xc7a35t_0]
 INFO: [Labtools 27-3164] End of startup status: HIGH
 refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
 INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B160D5A
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B160D5A
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/Christian Honein/Desktop/cpe133_labs/cpe133_labs.runs/impl_1/Lab0.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-exit
-INFO: [Common 17-206] Exiting Vivado at Fri Jun 18 11:14:14 2021...

@@ -30,7 +30,7 @@ module n_bit_counter#(parameter WIDTH=0, START_VAL=0)(
     output logic [WIDTH:0] count=START_VAL
     );
     
-    always_ff @ (posedge clk, posedge reset)
+    always_ff @ (posedge clk)
     begin
         if (reset)
             begin

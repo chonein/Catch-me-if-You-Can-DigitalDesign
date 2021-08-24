@@ -23,7 +23,7 @@ module CatchMeIfYouCan (
     output [15:0] LEDS
     );
     
-    logic t1, t6, t7, t8, t9, t10, t11; //clock, healthEN, scoreEN, at_max, counter_zero, PAUSE, MODE
+    logic t1, t6, t7, t8, t9, t10, t11, t13; //clock1, healthEN, scoreEN, at_max, counter_zero, PAUSE, MODE, clock2
     logic [4:0] t2, t3, t12; //led number, switch number, previous state
     logic [6:0] t4, t5; //health, score
     
@@ -34,8 +34,9 @@ module CatchMeIfYouCan (
     switches_encoder switches (.SWITCHES(SWITCHES), .ENCODED_SWITCHES(t3));
     health_counter health (.clk(t1), .UP(t8), .reset(t9), .EN(t6), .count(t4), .counter_zero(t9));
     score_counter score (.clk(t1), .reset(t9), .EN(t7), .count(t5), .at_max(t8));
-    button_press_register pause (.T(PAUSE_BTN), .S(1'b0), .R(1'b0), .clk(clk), .Q(t10));
-    button_press_register mode (.T(MODE_BTN), .S(1'b0), .R(1'b0), .clk(clk), .Q(t11));
+    clock_divider clkDiv2 (.clk(clk), .MAX_COUNT(7000000), .sclk(t13));
+    button_press_register pause (.T(PAUSE_BTN), .S(1'b0), .R(1'b0), .clk(t13), .Q(t10));
+    button_press_register mode (.T(MODE_BTN), .S(1'b0), .R(1'b0), .clk(t13), .Q(t11));
     stateRegister stateReg (.clk(t1), .D(t2), .savedState(t12), .reset(1'b0));
 
 endmodule
