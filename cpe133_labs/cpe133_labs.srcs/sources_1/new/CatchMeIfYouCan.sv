@@ -26,8 +26,9 @@ module CatchMeIfYouCan (
     logic t1, t6, t7, t8, t9, t10, t11, t13; //clock1, healthEN, scoreEN, at_max, counter_zero, PAUSE, MODE, clock2
     logic [4:0] t2, t3, t12; //led number, switch number, previous state
     logic [6:0] t4, t5; //health, score
+    logic [3:0] t14;
     
-    univ_sseg s_seg( .clk(clk), .cnt1({t4}), .cnt2(t5), .dp_en(1'b0), .dp_sel(2'b0), .mod_sel(2'b01), .sign(1'b0), .valid('b1), .ssegs(SEGMENTS), .disp_en(DISP_EN) );
+    univ_sseg s_seg( .clk(clk), .cnt1({t4}), .cnt2(t5), .dp_en(1'b0), .dp_sel(2'b0), .mod_sel(2'b01), .sign(1'b0), .valid('b1), .ssegs(SEGMENTS), .disp_en(t14) );
     CatchMeFSM catchme (.clk(t1), .reset(t9), .mode(t11), .pause(t10), .switch(t3), .scoreEN(t7), .healthEN(t6), .led(t2), .prevState(t12));
     clock_divider clkDiv (.clk(clk), .MAX_COUNT(50000000), .sclk(t1));
     LEDS_DECODER leds (.LED_NUM(t2), .LEDS_DECODED(LEDS));
@@ -37,6 +38,7 @@ module CatchMeIfYouCan (
     clock_divider clkDiv2 (.clk(clk), .MAX_COUNT(7000000), .sclk(t13));
     button_press_register pause (.T(PAUSE_BTN), .S(1'b0), .R(1'b0), .clk(t13), .Q(t10));
     button_press_register mode (.T(MODE_BTN), .S(1'b0), .R(1'b0), .clk(t13), .Q(t11));
-    stateRegister stateReg (.clk(t1), .D(t2), .savedState(t12), .reset(1'b0));
+    stateRegister stateReg ( .clk(t1), .D(t2), .savedState(t12), .reset(1'b0) );
+    MUX_2_1#(3) ( .zero(t14), .one(4'b1111), .SEL(t1 & t10), .out(DISP_EN) );
 
 endmodule

@@ -17,10 +17,10 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 7180
+INFO: [Synth 8-7075] Helper process launched with PID 6676
 WARNING: [Synth 8-6901] identifier 'START' is used before its declaration [C:/Users/Christian Honein/Desktop/v2/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/fsm_template.sv:19]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1032.695 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1033.629 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'CatchMeIfYouCan' [C:/Users/Christian Honein/Desktop/v2/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/CatchMeIfYouCan.sv:16]
 INFO: [Synth 8-6157] synthesizing module 'univ_sseg' [C:/Users/Christian Honein/Desktop/v2/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/univ_sseg.sv:56]
@@ -83,20 +83,23 @@ INFO: [Synth 8-6157] synthesizing module 'button_press_register' [C:/Users/Chris
 INFO: [Synth 8-6155] done synthesizing module 'button_press_register' (12#1) [C:/Users/Christian Honein/Desktop/v2/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/button_press_register.sv:20]
 INFO: [Synth 8-6157] synthesizing module 'stateRegister' [C:/Users/Christian Honein/Desktop/v2/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/stateRegister.sv:25]
 INFO: [Synth 8-6155] done synthesizing module 'stateRegister' (13#1) [C:/Users/Christian Honein/Desktop/v2/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/stateRegister.sv:25]
-INFO: [Synth 8-6155] done synthesizing module 'CatchMeIfYouCan' (14#1) [C:/Users/Christian Honein/Desktop/v2/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/CatchMeIfYouCan.sv:16]
+INFO: [Synth 8-6157] synthesizing module 'MUX_2_1' [C:/Users/Christian Honein/Desktop/v2/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/MUX_2_1.sv:10]
+	Parameter WIDTH bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'MUX_2_1' (14#1) [C:/Users/Christian Honein/Desktop/v2/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/MUX_2_1.sv:10]
+INFO: [Synth 8-6155] done synthesizing module 'CatchMeIfYouCan' (15#1) [C:/Users/Christian Honein/Desktop/v2/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/CatchMeIfYouCan.sv:16]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1039.707 ; gain = 7.012
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1040.469 ; gain = 6.840
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1039.707 ; gain = 7.012
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1040.469 ; gain = 6.840
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1039.707 ; gain = 7.012
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1040.469 ; gain = 6.840
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1039.707 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1040.469 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -107,33 +110,33 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/CatchMeIfYouCan_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1171.242 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1175.066 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1171.242 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1175.066 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 1171.242 ; gain = 138.547
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1175.066 ; gain = 141.438
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 1171.242 ; gain = 138.547
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1175.066 ; gain = 141.438
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 1171.242 ; gain = 138.547
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1175.066 ; gain = 141.438
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-327] inferring latch for variable 'randD_reg' [C:/Users/Christian Honein/Desktop/v2/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/CatchMeFSM.sv:85]
 WARNING: [Synth 8-327] inferring latch for variable 'randC_reg' [C:/Users/Christian Honein/Desktop/v2/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/CatchMeFSM.sv:84]
 WARNING: [Synth 8-327] inferring latch for variable 'randB_reg' [C:/Users/Christian Honein/Desktop/v2/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/CatchMeFSM.sv:85]
 WARNING: [Synth 8-327] inferring latch for variable 'randA_reg' [C:/Users/Christian Honein/Desktop/v2/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.srcs/sources_1/new/CatchMeFSM.sv:83]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 1171.242 ; gain = 138.547
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1175.066 ; gain = 141.438
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -160,6 +163,7 @@ Detailed RTL Component Info :
 	  17 Input    5 Bit        Muxes := 1     
 	   8 Input    4 Bit        Muxes := 1     
 	   4 Input    4 Bit        Muxes := 5     
+	   2 Input    4 Bit        Muxes := 1     
 	   2 Input    2 Bit        Muxes := 2     
 	   2 Input    1 Bit        Muxes := 42    
 	  19 Input    1 Bit        Muxes := 8     
@@ -180,7 +184,7 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 1171.242 ; gain = 138.547
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1175.066 ; gain = 141.438
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -201,19 +205,19 @@ Finished ROM, RAM, DSP and Shift Register Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 1171.242 ; gain = 138.547
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 1175.066 ; gain = 141.438
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 1171.242 ; gain = 138.547
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 1175.066 ; gain = 141.438
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 1179.445 ; gain = 146.750
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 1175.066 ; gain = 141.438
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -231,37 +235,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 1184.238 ; gain = 151.543
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 1176.449 ; gain = 142.820
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 1184.238 ; gain = 151.543
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 1176.449 ; gain = 142.820
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 1184.238 ; gain = 151.543
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 1176.449 ; gain = 142.820
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 1184.238 ; gain = 151.543
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 1176.449 ; gain = 142.820
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 1184.238 ; gain = 151.543
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 1176.449 ; gain = 142.820
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 1184.238 ; gain = 151.543
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 1176.449 ; gain = 142.820
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -279,38 +283,38 @@ Report Cell Usage:
 +------+-------+------+
 |1     |BUFG   |     1|
 |2     |CARRY4 |    40|
-|3     |LUT1   |     8|
-|4     |LUT2   |    43|
-|5     |LUT3   |    18|
-|6     |LUT4   |    28|
-|7     |LUT5   |    61|
-|8     |LUT6   |   102|
+|3     |LUT1   |     9|
+|4     |LUT2   |    30|
+|5     |LUT3   |    19|
+|6     |LUT4   |    35|
+|7     |LUT5   |    46|
+|8     |LUT6   |   106|
 |9     |FDRE   |   103|
 |10    |LD     |     4|
 |11    |IBUF   |    19|
 |12    |OBUF   |    28|
 +------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 1184.238 ; gain = 151.543
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 1176.449 ; gain = 142.820
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:34 . Memory (MB): peak = 1184.238 ; gain = 20.008
-Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 1184.238 ; gain = 151.543
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:31 . Memory (MB): peak = 1176.449 ; gain = 8.223
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 1176.449 ; gain = 142.820
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1196.266 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1188.527 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 44 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1197.285 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1192.762 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 4 instances were transformed.
   LD => LDCE: 4 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-52 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+54 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:47 . Memory (MB): peak = 1197.285 ; gain = 164.590
+synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:43 . Memory (MB): peak = 1192.762 ; gain = 159.133
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Christian Honein/Desktop/v2/Digital_Design_Labs_Project/cpe133_labs/cpe133_labs.runs/synth_1/CatchMeIfYouCan.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file CatchMeIfYouCan_utilization_synth.rpt -pb CatchMeIfYouCan_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Aug 23 17:58:45 2021...
+INFO: [Common 17-206] Exiting Vivado at Mon Aug 23 18:23:46 2021...
