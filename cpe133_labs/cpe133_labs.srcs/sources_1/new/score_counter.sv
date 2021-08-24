@@ -36,7 +36,7 @@ module score_counter(
     
     always_comb
     begin
-        if (count == 5) // reset counter when 99 is reached/signal the reset with at_max
+        if (count == 99) // reset counter when 99 is reached/signal the reset with at_max
             begin
                 t1 = 1;
                 at_max = 1;
