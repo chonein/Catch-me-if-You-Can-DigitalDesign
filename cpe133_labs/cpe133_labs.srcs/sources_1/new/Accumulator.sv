@@ -14,8 +14,8 @@
 
 
 module Accumulator # (parameter MAX_WIDTH = 7)(
-    input clk, reset, sub,
-    input [MAX_WIDTH:0] startValue, inputValue,
+    input clk, reset, en, sub,
+    input [MAX_WIDTH:0] startValue, inputValue, limitValue,
     output logic [MAX_WIDTH:0] sum = startValue
     );
     
@@ -25,15 +25,21 @@ module Accumulator # (parameter MAX_WIDTH = 7)(
         begin
             sum <= startValue;
         end
-        else
+        else if (en)
         begin
             if (sub)
             begin
-                sum <= (sum - inputValue);
+                if (sum > limitValue)
+                begin
+                    sum <= (sum - inputValue);
+                end
             end
             else
             begin
-                sum <= (sum + inputValue);
+                if (sum < limitValue)
+                begin
+                    sum <= (sum + inputValue);
+                end
             end
         end
     end
