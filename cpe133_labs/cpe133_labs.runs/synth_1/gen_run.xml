@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1629831132">
   <File Type="PA-TCL" Name="CatchMeIfYouCan.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="CatchMeIfYouCan_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="CatchMeIfYouCan_reports.tcl"/>
   <File Type="RDS-RDS" Name="CatchMeIfYouCan.vds"/>
   <File Type="RDS-UTIL" Name="CatchMeIfYouCan_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="CatchMeIfYouCan_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="CatchMeIfYouCan.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="CatchMeIfYouCan_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="CatchMeIfYouCan_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/FA.sv">

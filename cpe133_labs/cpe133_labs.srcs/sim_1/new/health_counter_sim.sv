@@ -11,11 +11,11 @@ module health_counter_sim(
 
     );
     
-    logic clk, EN, R, UP;
+    logic clk, EN, R, UP, COUNTER_ZERO;
     logic [6:0] count;
     
     
-    health_counter health_counter_inst ( .clk(clk), .reset(R), .EN(EN), .count(count), .UP(UP) );
+    health_counter health_counter_inst ( .clk(clk), .reset(R), .EN(EN), .count(count), .UP(UP), .counter_zero(COUNTER_ZERO) );
     
     always
     begin
@@ -28,24 +28,33 @@ module health_counter_sim(
     initial
     begin
         R = 0;
-        EN = 1;
-        UP = 1;
-        #30
-        
+        EN = 0;
+        UP = 0;
+        #3
+    
         R = 0;
         EN = 1;
-        UP = 0;
-        #30
+        UP = 1;
+        #10
         
         R = 1;
         EN = 0;
         UP = 0;
-        #30
+        #8
+        
+        R = 0;
+        EN = 1;
+        UP = 0;
+        #5
         
         R = 0;
         EN = 0;
-        UP = 0;
-        #30        
+        UP = 1;
+        #5
+        
+        R = 0;
+        EN = 1;
+        UP = 0;        
         
         
         
